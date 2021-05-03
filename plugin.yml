@@ -1,0 +1,6 @@
+---
+name: Protectplugins
+version: 0.0.1
+main: tatchan\Protectplugins\Main
+api: 3.19.0
+...
