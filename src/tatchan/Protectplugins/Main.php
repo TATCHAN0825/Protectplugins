@@ -12,7 +12,7 @@ use pocketmine\utils\Config;
 class Main extends PluginBase implements Listener
 {
     public function onEnable() {
-        new Config($this->getDataFolder() . "config.yml", default: ["plugins" => []]);
+        new Config($this->getDataFolder() . "config.yml",["plugins" => []]);
         $plugins = $this->getConfig()->get("plugins");
         $this->getLogger()->notice("監視対象:" . implode(",",$plugins));
 
